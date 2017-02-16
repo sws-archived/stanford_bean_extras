@@ -1,4 +1,4 @@
-h1{
+h1 {
   margin: 40px;
 }
 
@@ -8,13 +8,13 @@ h1{
 
 }
 
-.stanford-image-card img{
+.stanford-image-card img {
   width: 270px;
 
 }
 
-.stanford-image-card-title h3{
-  color:white;
+.stanford-image-card-title h3 {
+  color: white;
   background-color: #175E54;
   margin: 0px;
   line-height: 1.75em;
