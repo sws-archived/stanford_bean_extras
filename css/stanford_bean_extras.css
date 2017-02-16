@@ -1,0 +1,24 @@
+h1{
+  margin: 40px;
+}
+
+.stanford_directory_item{
+  display:inline-block;
+  margin: 5px;
+
+}
+
+.stanford_directory_item img{
+  width: 270px;
+
+}
+
+.stanford_directory_title h3{
+  color:white;
+  background-color: #175E54;
+  margin: 0px;
+  line-height: 1.75em;
+  padding: 10px;
+  font-size: 1.3em;
+  font-weight: normal;
+}
