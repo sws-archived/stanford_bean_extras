@@ -16,10 +16,10 @@ class StanfordImageCard extends BeanPlugin {
     $link_title = $bean->field_s_image_card_link['und'][0]['title'];
     $link_url = $bean->field_s_image_card_link['und'][0]['url'];
     $markup .= "<div class='container'>";
-    $markup .= "<div class='stanford_directory_item'>";
+    $markup .= "<div class='stanford-image-card'>";
     $markup .= "<a href='" . $link_url . "'>";
     $markup .=  $img;
-    $markup .= "<span class='stanford_directory_title'>";
+    $markup .= "<span class='stanford-image-card-title'>";
     $markup .= "<h3>" . $link_title . "</h3>";
     $markup .= "</span>";
     $markup .= "</a>";

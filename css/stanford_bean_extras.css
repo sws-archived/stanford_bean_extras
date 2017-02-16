@@ -2,18 +2,18 @@ h1{
   margin: 40px;
 }
 
-.stanford_directory_item{
+.stanford-image-card {
   display:inline-block;
   margin: 5px;
 
 }
 
-.stanford_directory_item img{
+.stanford-image-card img{
   width: 270px;
 
 }
 
-.stanford_directory_title h3{
+.stanford-image-card-title h3{
   color:white;
   background-color: #175E54;
   margin: 0px;
