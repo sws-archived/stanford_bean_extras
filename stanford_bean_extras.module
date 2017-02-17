@@ -12,21 +12,6 @@ include_once 'stanford_bean_extras.features.inc';
 function stanford_bean_extras_bean_types() {
   include_once "stanford_bean_extras.bean.inc";
   $plugins = array();
-  //$types = bean_admin_ui_bean_types();
-  //$plugin_path = drupal_get_path('module', 'bean') . '/plugins';
-  //
-  //foreach ($types as $k => $bean_type) {
-  //  $plugins[$k] = array(
-  //    'label' => $bean_type->name,
-  //    'description' => t($bean_type->description),
-  //    'handler' => array(
-  //      'class' => 'BeanDefault',
-  //      'parent' => 'bean',
-  //      'path' => $plugin_path,
-  //      'file' => 'BeanDefault.class.php',
-  //    ),
-  //  );
-  //}
   $plugins = bean_admin_ui_bean_types();
   $extras_plugin_path = drupal_get_path('module', 'stanford_bean_extras') . '/plugins/bean';
   $plugins['stanford_image_card'] = array(
