@@ -16,7 +16,7 @@ class StanfordImageCard extends BeanPlugin {
     $img = theme('image_style', array('style_name' => 'image-card', 'path' => $img_uri));
     $link_title = $bean->field_s_image_card_link['und'][0]['title'];
     $link_url = $bean->field_s_image_card_link['und'][0]['url'];
-    $markup .= "<div class='container'>";
+    $markup = "<div class='container'>";
     $markup .= "<div class='stanford-image-card'>";
     $markup .= "<a href='" . $link_url . "'>";
     $markup .=  $img;
