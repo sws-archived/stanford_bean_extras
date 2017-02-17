@@ -1,8 +1,18 @@
 <?php
+
 /**
  * @file
  * stanford_bean_extras.features.inc
  */
+
+ /**
+ * Implements hook_bean_types_api_info().
+ */
+function stanford_bean_extras_bean_types_api_info($module = NULL, $api = NULL) {
+  if ($module == "bean" && $api == "types") {
+    return array("version" => "5");
+  }
+}
 
 /**
  * Implements hook_ctools_plugin_api().
