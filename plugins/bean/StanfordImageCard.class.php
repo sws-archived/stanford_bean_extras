@@ -1,4 +1,5 @@
 <?php
+
 /**
  * @file
  * Listing bean plugin.

@@ -5,3 +5,41 @@
  */
 
 include_once 'stanford_bean_extras.features.inc';
+
+/**
+ * Implements hook_bean_types().
+ */
+function stanford_bean_extras_bean_types() {
+  include_once "stanford_bean_extras.bean.inc";
+  $plugins = array();
+  //$types = bean_admin_ui_bean_types();
+  //$plugin_path = drupal_get_path('module', 'bean') . '/plugins';
+  //
+  //foreach ($types as $k => $bean_type) {
+  //  $plugins[$k] = array(
+  //    'label' => $bean_type->name,
+  //    'description' => t($bean_type->description),
+  //    'handler' => array(
+  //      'class' => 'BeanDefault',
+  //      'parent' => 'bean',
+  //      'path' => $plugin_path,
+  //      'file' => 'BeanDefault.class.php',
+  //    ),
+  //  );
+  //}
+  $plugins = bean_admin_ui_bean_types();
+  $extras_plugin_path = drupal_get_path('module', 'stanford_bean_extras') . '/plugins/bean';
+  $plugins['stanford_image_card'] = array(
+    'name' => 'stanford_image_card',
+    'label' => 'stanford_image_card',
+    'api_version' => 5,
+    'description' => 'Stanford Image Card provides an image, title and url.',
+    'handler' => array(
+      'class' => 'StanfordImageCard',
+      'parent' => 'bean',
+      'path' => $extras_plugin_path,
+      'file' => 'StanfordImageCard.class.php',
+    ),
+  );
+  return $plugins;
+}
